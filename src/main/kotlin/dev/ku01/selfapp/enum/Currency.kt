@@ -1,5 +1,6 @@
 package dev.ku01.selfapp.enum
 
+@Suppress("unused")
 enum class Currency(val description: String) {
     AED("United Arab Emirates dirham"),
     AFN("Afghan afghani"),

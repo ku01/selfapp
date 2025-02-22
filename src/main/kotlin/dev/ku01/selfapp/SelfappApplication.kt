@@ -1,11 +1,11 @@
-package dev.ku01.finapp
+package dev.ku01.selfapp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class FinappApplication
+class SelfappApplication
 
 fun main(args: Array<String>) {
-	runApplication<FinappApplication>(*args)
+	runApplication<SelfappApplication>(*args)
 }

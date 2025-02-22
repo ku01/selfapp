@@ -1,5 +1,5 @@
 spring:
-  application.name: finapp
+  application.name: selfapp
   docker.compose.file: 'local/docker-compose.yml'
   jpa:
     hibernate:

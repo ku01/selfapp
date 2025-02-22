@@ -1,8 +1,8 @@
-package dev.ku01.finapp.controller
+package dev.ku01.selfapp.controller
 
-import dev.ku01.finapp.converter.toDto
-import dev.ku01.finapp.dto.AccountDto
-import dev.ku01.finapp.service.AccountService
+import dev.ku01.selfapp.converter.toDto
+import dev.ku01.selfapp.dto.AccountDto
+import dev.ku01.selfapp.service.AccountService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 

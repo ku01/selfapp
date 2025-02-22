@@ -1,7 +1,7 @@
-package dev.ku01.finapp.converter
+package dev.ku01.selfapp.converter
 
-import dev.ku01.finapp.dto.AccountDto
-import dev.ku01.finapp.entity.Account
+import dev.ku01.selfapp.dto.AccountDto
+import dev.ku01.selfapp.entity.Account
 
 fun AccountDto.toAccount() = Account(
     name = name,

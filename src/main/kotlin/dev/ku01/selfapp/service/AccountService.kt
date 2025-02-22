@@ -1,9 +1,9 @@
-package dev.ku01.finapp.service
+package dev.ku01.selfapp.service
 
-import dev.ku01.finapp.converter.toAccount
-import dev.ku01.finapp.dto.AccountDto
-import dev.ku01.finapp.entity.Account
-import dev.ku01.finapp.repository.AccountRepository
+import dev.ku01.selfapp.converter.toAccount
+import dev.ku01.selfapp.dto.AccountDto
+import dev.ku01.selfapp.entity.Account
+import dev.ku01.selfapp.repository.AccountRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 

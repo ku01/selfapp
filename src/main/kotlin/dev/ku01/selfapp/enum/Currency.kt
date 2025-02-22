@@ -1,4 +1,4 @@
-package dev.ku01.finapp.enum
+package dev.ku01.selfapp.enum
 
 enum class Currency(val description: String) {
     AED("United Arab Emirates dirham"),

@@ -1,6 +1,6 @@
-package dev.ku01.finapp.dto
+package dev.ku01.selfapp.dto
 
-import dev.ku01.finapp.enum.Currency
+import dev.ku01.selfapp.enum.Currency
 import java.math.BigDecimal
 
 data class AccountDto(

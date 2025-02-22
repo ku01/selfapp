@@ -1,5 +1,5 @@
-# Finapp
+# Selfapp
 
 ## Description
 
-Finapp means financial application.
+Selfapp means application for myself.

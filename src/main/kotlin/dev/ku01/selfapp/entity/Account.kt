@@ -1,6 +1,6 @@
-package dev.ku01.finapp.entity
+package dev.ku01.selfapp.entity
 
-import dev.ku01.finapp.enum.Currency
+import dev.ku01.selfapp.enum.Currency
 import jakarta.persistence.*
 import java.math.BigDecimal
 

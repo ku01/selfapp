@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  finapp-postgres:
+  selfapp-postgres:
     image: postgres:17.4
     environment:
-      - POSTGRES_DB=finapp
-      - POSTGRES_USER=finapp
-      - POSTGRES_PASSWORD=FnnABB
+      - POSTGRES_DB=selfapp
+      - POSTGRES_USER=selfapp
+      - POSTGRES_PASSWORD=sElFaPP1
     ports:
       - "5432:5432"

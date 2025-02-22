@@ -1,1 +1,1 @@
-rootProject.name = "finapp"
+rootProject.name = "selfapp"

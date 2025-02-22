@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  finapp-postgres:
+    image: postgres:17.4
+    environment:
+      - POSTGRES_DB=finapp
+      - POSTGRES_USER=finapp
+      - POSTGRES_PASSWORD=FnnABB
+    ports:
+      - "5432:5432"

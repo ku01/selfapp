@@ -1,6 +1,6 @@
 spring:
   application.name: selfapp
-  docker.compose.file: 'local/docker-compose.yml'
+  docker.compose.file: 'account/local/docker-compose.yml'
   jpa:
     hibernate:
       ddl-auto: update

@@ -1,7 +1,5 @@
 package dev.ku01.selfapp.service
 
-import dev.ku01.selfapp.converter.toAccount
-import dev.ku01.selfapp.dto.AccountDto
 import dev.ku01.selfapp.entity.Account
 import dev.ku01.selfapp.repository.AccountRepository
 import org.springframework.stereotype.Service
@@ -10,8 +8,8 @@ import org.springframework.transaction.annotation.Transactional
 @Service
 class AccountService(private val accountRepository: AccountRepository) {
     @Transactional
-    fun postAccount(accountDto: AccountDto): Account {
-        return accountRepository.save(accountDto.toAccount())
+    fun postAccount(account: Account): Account {
+        return accountRepository.save(account)
     }
 
     @Transactional(readOnly = true)

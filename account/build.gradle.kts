@@ -1,3 +1,5 @@
+val mockitoKotlinVer = "5.4.0"
+
 plugins {
     kotlin("jvm")
     kotlin("plugin.spring")
@@ -17,9 +19,12 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVer")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVer")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("org.springframework.boot:spring-boot-docker-compose")

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/accounts")
 class AccountController(private val accountService: AccountService) {
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     fun postAccount(@RequestBody accountDto: AccountDto): AccountDto {
         return accountService.postAccount(accountDto.toEntity()).toDto()
     }

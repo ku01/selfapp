@@ -5,7 +5,7 @@ plugins {
 	kotlin("plugin.jpa") version kotlinVer apply false
 }
 
-group = "dev.ku01"
+group = "dev.ku01.selfapp"
 
 subprojects {
 	repositories {

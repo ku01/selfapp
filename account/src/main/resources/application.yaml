@@ -1,4 +1,8 @@
 spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: account
+    password: sElFaPP1
   application.name: selfapp
   docker.compose.file: 'account/local/docker-compose.yml'
   jpa:

@@ -1,4 +1,5 @@
 val mockitoKotlinVer = "5.4.0"
+val testcontainersVer = "1.20.6"
 
 plugins {
     kotlin("jvm")
@@ -25,6 +26,9 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVer")
     testImplementation("org.mockito.kotlin:mockito-kotlin:$mockitoKotlinVer")
+    testImplementation("org.testcontainers:testcontainers:$testcontainersVer")
+    testImplementation("org.testcontainers:junit-jupiter:$testcontainersVer")
+    testImplementation("org.testcontainers:postgresql:$testcontainersVer")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
     runtimeOnly("org.springframework.boot:spring-boot-docker-compose")

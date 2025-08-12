@@ -12,8 +12,8 @@ import org.mockito.kotlin.argumentCaptor
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
+import org.springframework.boot.test.mock.mockito.MockBean
 import org.springframework.http.MediaType
-import org.springframework.test.context.bean.override.mockito.MockitoBean
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
@@ -22,7 +22,7 @@ import kotlin.test.assertEquals
 
 @WebMvcTest(controllers = [AccountController::class])
 class AccountControllerTest : BaseControllerTest() {
-    @MockitoBean
+    @MockBean
     private lateinit var accountService: AccountService
 
     @Test

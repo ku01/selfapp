@@ -1,8 +1,7 @@
 plugins {
-	val kotlinVer = "1.9.25"
-	kotlin("jvm") version kotlinVer apply false
-	kotlin("plugin.spring") version kotlinVer apply false
-	kotlin("plugin.jpa") version kotlinVer apply false
+	alias(libs.plugins.kotlin.jvm) apply false
+	alias(libs.plugins.kotlin.spring) apply false
+	alias(libs.plugins.kotlin.jpa) apply false
 }
 
 group = "dev.ku01.selfapp"
@@ -11,4 +10,7 @@ subprojects {
 	repositories {
 		mavenCentral()
 	}
+	apply(plugin = "org.jetbrains.kotlin.jvm")
+	apply(plugin = "org.jetbrains.kotlin.plugin.spring")
+	apply(plugin = "org.jetbrains.kotlin.plugin.jpa")
 }

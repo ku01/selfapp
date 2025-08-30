@@ -36,9 +36,9 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers:$testcontainersVer")
     testImplementation("org.testcontainers:junit-jupiter:$testcontainersVer")
     testImplementation("org.testcontainers:postgresql:$testcontainersVer")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("org.postgresql:postgresql")
-    runtimeOnly("org.springframework.boot:spring-boot-docker-compose")
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    developmentOnly("org.springframework.boot:spring-boot-docker-compose")
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }

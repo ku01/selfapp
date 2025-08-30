@@ -1,9 +1,10 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: account
-    password: sElFaPP1
-  application.name: selfapp
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/account}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  application.name: selfapp-account
   docker.compose.file: 'account/local/docker-compose.yml'
   jpa:
     hibernate:
